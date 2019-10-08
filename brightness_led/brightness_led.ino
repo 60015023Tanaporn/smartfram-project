@@ -21,7 +21,7 @@ void loop() {
   
   if(digitalRead(button_up)==LOW){ //ถ้าสถานะปุ่มกดUP เท่ากับLOW(ต่อแบบpull up)แล้วbrightnessน้อยกว่า255
     if (brightness<255){ /
-      brightness++,brightness+=12,brightness==255;//ให้brightnessเพิ่มได้ทีละ12 จนเท่ากับมากกว่า255
+      brightness++,brightness+=12,brightness==255;//ให้brightnessเพิ่มได้ทีละ12 จนเท่ากัมากกว่า255
       delay(150);
     }
   }
