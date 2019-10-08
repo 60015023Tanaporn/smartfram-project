@@ -11,10 +11,10 @@ void setup(){
   delay(10);
   Serial.println();
   Serial.print("Anto library version: ");
-  Serial.println(anto.getVersion());
+  Serial.println(anto.getVersion()); // lf;dmgfdlgdldgdgmfgmslkg;ls
   Serial.print("\nTrying to connect ");
   Serial.print(ssid);
-  Serial.println("...");
+  Serial.println("...");//dgagfsfgbfbxvbxvxbxv
   anto.begin(ssid, pass, messageReceived);
   Serial.println("\nConnected Anto done");
   anto.sub("LED1");              /*Subscript Channels "LED1"*/
@@ -29,7 +29,7 @@ void messageReceived(String thing, String channel, String payload) {
     Serial.print("/");
     Serial.print(channel);
     Serial.print("-> ");
-    Serial.println(payload);
+    Serial.println(payload);//fzgzgzgzgzgzgdzgz
     if(channel.equals("LED1"))
       digitalWrite(D1,(payload == "1")? 1:0);
 }
