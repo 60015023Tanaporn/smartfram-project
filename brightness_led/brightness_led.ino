@@ -19,14 +19,14 @@ void loop() {
   ledmap = map(brightness,0,255,0,99); //เทียบค่าpwm(0-255)ออกมาเป็น%(0-100)
   analogWrite(pin_led,brightness); // output เป็นpwm ใช้ได้ทุกขายกเว้น D0
   
-  if(digitalRead(button_up)==LOW){ //ถ้าสถานะปุ่มกดUP เท่ากับLOW(ต่อแบบpull up)แล้วbrightnessน้อยกว่า255
+  if(digitalRead(button_up)==LOW){ //ถ้าสถานะปุ่มกดUPเท่ากับLOW(ต่อแบบpull up)แล้วbrightnessน้อยกว่า255
     if (brightness<255){ /
       brightness++,brightness+=12,brightness==255;//ให้brightnessเพิ่มได้ทีละ12 จนเท่ากัมากกว่า255
       delay(150);
     }
   }
   
-  if(digitalRead(button_down)==LOW){//ถ้าสถานะปุ่มกดdown เท่ากับLOW(ต่อแบบpull up)แล้วbrightnessมากกกว่า0
+  if(digitalRead(button_down)==LOW){//ถ้าสถานะปุ่มกดdown เท่ากับLOW(ต่อแบบpullup)แล้วbrightnessมากกกว่า0
     if (brightness>0){
       brightness--,brightness-=12,brightness==0;//ให้brightnessลดลงได้ทีละ12 จนเหลือ0
       delay(150);
