@@ -50,7 +50,7 @@ void loop()
   lcd.print("%\n");    
 
   if (t > 31){
-    digitalWrite(cooling_pin, HIGH);  //
+    digitalWrite(cooling_pin, HIGH);  // ถ้าอุณหภูมิเกิด31 ให้แผ่นเพลเทียรทำงาน
   }
   else
   {
