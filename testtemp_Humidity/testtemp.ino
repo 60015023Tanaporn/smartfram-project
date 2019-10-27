@@ -9,7 +9,7 @@ int cooling_pin =2; //ประกาศตัวแปร cooling_pin 2 = ข�
 
 DHT dht(DHTPIN, DHTTYPE);   // ประกาศตัวแปรคลาส dht
  
-LiquidCrystal_I2C lcd(0x27, 16, 2); ประกาศตัวแปร LiquidCrystal_I2C LCD 16x2
+LiquidCrystal_I2C lcd(0x27, 16, 2); //ประกาศตัวแปร LiquidCrystal_I2C LCD 16x2
 void setup()
 {
   Serial.begin(9600);     
