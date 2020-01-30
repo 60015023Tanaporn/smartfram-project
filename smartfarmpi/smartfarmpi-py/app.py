@@ -7,7 +7,8 @@ import hardware
 controller_id = 1
 
 #webservice.server_url = "http://127.0.0.1/smartfarmpi"
-webservice.server_url = "http://smartfarmpi.host.imakeservice.com"
+#webservice.server_url = "http://smartfarmpi.host.imakeservice.com"
+webservice.server_url = "http://127.0.0.1/smartfarmpi"
 
 def Setup_Default_Settings():
     new_settings = webservice.LoadSettingData(controller_id)
