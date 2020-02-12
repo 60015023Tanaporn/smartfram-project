@@ -54,3 +54,13 @@ void messageReceived(String thing, String channel, String payload) {
   if(channel.equals("LED_1"))
       digitalWrite(D1,(payload == "1")? 1:0);
 }
+void messageReceived2(String thing, String channel, String payload) {
+  Serial.print("Recieved: ");
+  Serial.print(thing);
+  Serial.print("/");
+  Serial.print(channel);
+  Serial.print("-> ");
+  Serial.println(payload);
+  if(channel.equals("LED_1"))
+      digitalWrite(D1,(payload == "1")? 1:0);
+}
