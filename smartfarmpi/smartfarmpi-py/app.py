@@ -127,6 +127,7 @@ Update_Hardware_Status()
 while True:
     tick = int(time.time())
 
+   ## dt = datetime.datetime.fromtimestamp(tick)
     dt = datetime.datetime.fromtimestamp(tick)
     dt_seconds = (dt - dt.replace(hour=0, minute=0, second=0, microsecond=0)).total_seconds()
     dt_minutes = int(dt_seconds / 60)
