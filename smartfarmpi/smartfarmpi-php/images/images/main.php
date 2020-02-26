@@ -140,7 +140,7 @@
         <div class="col-xs-6">
             <div class="rounding" style="background-color: #60ffe7;">
             <div class="rounding-inner clearfix">
-            <h4>รถน้ำ</h4>
+            <h4>รดน้ำ</h4>
             <div class="">
                 <?php if ($pump) : ?>
                 <a href="?&mode=update&pump=0" class="btn-link"><img src="images/poweron_sm.png" /></a> ON
@@ -189,6 +189,8 @@
 setTimeout(function(){
    window.location.reload(1);
 }, 45000);
+    
+    
 </script>
 <?php   
     require('footer.php');
